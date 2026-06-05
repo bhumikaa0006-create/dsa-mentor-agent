@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DSA Mentor Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>DSA Mentor Agent</h1>
+
+    <textarea
+        id="question"
+        rows="8"
+        cols="50"
+        placeholder="Enter your DSA question here">
+    </textarea>
+
+    <br><br>
+
+    <button onclick="getHint()">
+        Get Hint
+    </button>
+
+    <p id="output"></p>
+
+    <script>
+
+      function getHint() {
+
+    let question =
+    document.getElementById("question").value.toLowerCase();
+
+    let response = "";
+
+    if(question.includes("array")) {
+
+        response =
+        "📚 Topic: Arrays\n💡 Hint: Traverse the array carefully.";
+
+    }
+
+    else if(question.includes("stack")) {
+
+        response =
+        "📚 Topic: Stack\n💡 Hint: Use LIFO principle.";
+
+    }
+
+    else if(question.includes("queue")) {
+
+        response =
+        "📚 Topic: Queue\n💡 Hint: Use FIFO principle.";
+
+    }
+
+    else if(question.includes("linked list")) {
+
+        response =
+        "📚 Topic: Linked List\n💡 Hint: Think about node connections.";
+
+    }
+
+    else {
+
+        response =
+        "📚 Topic: General DSA\n💡 Hint: Break problem into smaller steps.";
+
+    }
+
+    document.getElementById("output").innerText =
+    response;
+}function getHint() {
+
+    let question =
+    document.getElementById("question").value.toLowerCase();
+
+    let response = "";
+
+    if(question.includes("array")) {
+
+        response =
+        "📚 Topic: Arrays\n💡 Hint: Traverse the array carefully.";
+
+    }
+
+    else if(question.includes("stack")) {
+
+        response =
+        "📚 Topic: Stack\n💡 Hint: Use LIFO principle.";
+
+    }
+
+    else if(question.includes("queue")) {
+
+        response =
+        "📚 Topic: Queue\n💡 Hint: Use FIFO principle.";
+
+    }
+
+    else if(question.includes("linked list")) {
+
+        response =
+        "📚 Topic: Linked List\n💡 Hint: Think about node connections.";
+
+    }
+
+    else {
+
+        response =
+        "📚 Topic: General DSA\n💡 Hint: Break problem into smaller steps.";
+
+    }
+
+    document.getElementById("output").innerText =
+    response;
+}
+
+    </script>
+
+</body>
+</html>
